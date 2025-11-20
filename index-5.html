@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bell's Theorem</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        color: white;
+      }
+    </style>
+
+
+  </head>
+  <body background="https://art.teleportacia.org/observation/vernacular/stars/pusk.jpg">
+    <h3 class="tc">Bell's Theorem</h3>
+    <h4 class="tc">
+      Bell's Theorem, introduced by John Stewart Bell in 1964, provides a mathematical and experimental way to distinguish between the predictions of quantum mechanics and theories based on "local realism".
+    </h4>
+    <h4 class="tc">
+      Local realism assumes that physical properties of objects exist independently of observation (realism) and that influences cannot travel faster than the speed of light (locality). Bell demonstrated that any theory adhering to these classical assumptions must satisfy a set of mathematical constraints known as Bell's inequalities.
+    </h4>
+    <h4 class="tc">
+      The theorem is typically illustrated using a thought experiment involving a pair of entangled particles sent to two separate measuring stations (Alice and Bob). Quantum mechanics predicts correlations between the measurement outcomes that are stronger than local realism allows, violating Bell's inequalities.
+    </h4>
+    <h4 class="tc">
+      Numerous experiments, known as Bell tests, have since been conducted and consistently show that physical systems violate Bell's inequalities and obey the predictions of quantum mechanics, thereby demonstrating that our world is non-local. The Nobel Prize in Physics for 2022 was awarded to John Clauser, Alain Aspect, and Anton Zeilinger for their work in this area.
+    </h4>
+
+    <table>
+      <caption>Key Elements of the CHSH Inequality</caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Meaning</th>
+          <th>How You Calculate It</th>
+          <th>Typical Values</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Measurement Settings</td>
+          <td>Alice and Bob each choose between two settings (a, a′) and (b, b′).</td>
+          <td>Select four combinations: (a,b), (a,b′), (a′,b), (a′,b′).</td>
+          <td>Just labels for the four experiments.</td>
+        </tr>
+
+        <tr>
+          <td>Outcomes</td>
+          <td>Each measurement gives either +1 or −1.</td>
+          <td>Collect many trials for each setting pair.</td>
+          <td>Counts of ++, +−, −+, −−.</td>
+        </tr>
+
+        <tr>
+          <td>Correlation \(E(a,b)\)</td>
+          <td>How often Alice and Bob match or differ for a given setting pair.</td>
+          <td>\(E = \frac{N_{\text{same}} - N_{\text{diff}}}{N}\)</td>
+          <td>Ranges from −1 to +1.</td>
+        </tr>
+
+        <tr>
+          <td>Four Correlations</td>
+          <td>One for each setting pair.</td>
+          <td>Compute \(E(a,b), E(a,b'), E(a',b), E(a',b')\) separately.</td>
+          <td>Example: −0.707, −0.707, −0.707, +0.707.</td>
+        </tr>
+
+        <tr>
+          <td>CHSH Expression \(S\)</td>
+          <td>Combination of the four correlations.</td>
+          <td>\(S = E(a,b) + E(a,b') + E(a',b) - E(a',b')\)</td>
+          <td>Classical limit: |S| ≤ 2.</td>
+        </tr>
+
+        <tr>
+          <td>Interpretation</td>
+          <td>Tests if the correlations can be explained by local realism.</td>
+          <td>If |S| > 2, CHSH inequality is violated.</td>
+          <td>Quantum max: 2.828.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="tc">Bell's Theorem</h2>
+    <h5 style="color:white">Click the image for a source!</h5>
+
+    <a href="index-3.html">
+      <img
+        src="https://assets.propertyshelf.com/web-graphics/click-buttons/back-button.png/image"
+        class="back"
+      />
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat">
+      <img
+        src="https://brilliant.org/wiki/bells-theorem/"
+        class="rat"
+      />
+    </a>
+  </body>
+</html>
